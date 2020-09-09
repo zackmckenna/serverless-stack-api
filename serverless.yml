@@ -88,7 +88,7 @@ functions:
           authorizer: aws_iam
 
   billing:
-    handler: billings.main
+    handler: billing.main
     events:
       - http:
           path: billing

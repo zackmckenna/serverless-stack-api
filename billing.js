@@ -9,7 +9,7 @@ export const main = handler(async (event, context) => {
 
   const stripe = stripePackage(process.env.stripeSecretKey);
 
-  await stripe.charge.create({
+  await stripe.charges.create({
     source,
     amount,
     description,
